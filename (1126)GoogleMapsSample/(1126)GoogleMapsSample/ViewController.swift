@@ -13,7 +13,15 @@ class ViewController: UIViewController {
 
     
     //특정 영역에서 구글맵을 사용하기 위해선, 특정 클래스를 상속 받는 IBOutlet을 선언하여 주어야 한다.
+    
+    
+    @IBOutlet weak var latiTF: UITextField!
+    @IBOutlet weak var longiTF: UITextField!
+    @IBOutlet weak var titleTF: UITextField!
+    
     @IBOutlet weak var CustomMap: GMSMapView!
+    
+    //var samplePosition
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,8 +43,23 @@ class ViewController: UIViewController {
         marker.map = CustomMap
         marker.position = camera.target
         marker.snippet = placeName
-        marker.appearAnimation = GMSMarkerAnimation.pop
+        //? marker.appearAnimation = GMSMarkerAnimation.pop
         
+        CustomMap.settings.myLocationButton = true
+        CustomMap.isMyLocationEnabled = true
+        
+        
+    }
+    
+    
+    @IBAction func createNewLocation(_ sender: Any) {
+        
+        guard let latiNum = latiTF.text else { return }
+        guard let longiNum = longiTF.text else { return }
+        
+        
+        
+        showSomeWhere(lati: Double(latiNum)!, longi: Double(longiNum)!, placeName: titleTF.text!)
         
     }
     
