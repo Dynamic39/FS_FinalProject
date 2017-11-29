@@ -8,6 +8,9 @@
 
 import UIKit
 import GoogleMaps
+import Firebase
+import FirebaseStorage
+import FirebaseDatabase
 
 class ViewController: UIViewController {
 
@@ -20,6 +23,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var titleTF: UITextField!
     
     @IBOutlet weak var CustomMap: GMSMapView!
+    var zoom:Float = 15.0
+    
+    
     
     //var samplePosition
     
@@ -27,14 +33,34 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         showSomeWhere(lati: 37.515, longi: 127.019, placeName: "Fast Campus!")
+        
+        reloadPoint()
+        
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        
+        reloadPoint()
+    }
+    
+    func reloadPoint(){
+        
+        let loadPosition = PositionData.main.positionData
+        print("엥?", loadPosition)
+        
+        for data in loadPosition {
+            
+            let somewhere = "여기는 어딘가?"
+            showSomeWhere(lati: data.lati!, longi: data.longi!, placeName: somewhere)
+            
+        }
+    }
 
     //구글맵을 이용한, 특정 위치를 불러오는 메서드를 구현한다.
     func showSomeWhere(lati: Double, longi:Double, placeName:String){
         
         // 위도, 경도를 지정하여 주는 프로퍼티
-        let camera = GMSCameraPosition.camera(withLatitude: lati, longitude: longi, zoom: 15)
+        let camera = GMSCameraPosition.camera(withLatitude: lati, longitude: longi, zoom: zoom)
         // 선언된 IBOulet의 위치를 지정해준다.
         self.CustomMap.camera = camera
         
@@ -50,6 +76,21 @@ class ViewController: UIViewController {
         
         
     }
+    
+    @IBAction func SizeUp(_ sender: UIButton) {
+        
+        
+            zoom += 1
+            CustomMap.animate(toZoom: zoom)
+    }
+    
+    
+    @IBAction func SizeDown(_ sender: Any) {
+        
+        zoom -= 1
+        CustomMap.animate(toZoom: zoom)
+    }
+    
     
     
     @IBAction func createNewLocation(_ sender: Any) {

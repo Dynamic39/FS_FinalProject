@@ -14,6 +14,8 @@
 		FC10E0621FCC3D6D003E6F07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC10E0611FCC3D6D003E6F07 /* Assets.xcassets */; };
 		FC10E0651FCC3D6D003E6F07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC10E0631FCC3D6D003E6F07 /* LaunchScreen.storyboard */; };
 		FC3979F61FCD42750055AC4A /* GoogleMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3979F51FCD42750055AC4A /* GoogleMarker.swift */; };
+		FC7C45921FCE908A00EC0210 /* FirebaseSampleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7C45911FCE908A00EC0210 /* FirebaseSampleVC.swift */; };
+		FC7C45941FCEA51200EC0210 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FC7C45931FCEA51200EC0210 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		FC10E0641FCC3D6D003E6F07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC10E0661FCC3D6D003E6F07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC3979F51FCD42750055AC4A /* GoogleMarker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMarker.swift; sourceTree = "<group>"; };
+		FC7C45911FCE908A00EC0210 /* FirebaseSampleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseSampleVC.swift; sourceTree = "<group>"; };
+		FC7C45931FCEA51200EC0210 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +91,8 @@
 				FC10E0631FCC3D6D003E6F07 /* LaunchScreen.storyboard */,
 				FC10E0661FCC3D6D003E6F07 /* Info.plist */,
 				FC3979F51FCD42750055AC4A /* GoogleMarker.swift */,
+				FC7C45931FCEA51200EC0210 /* GoogleService-Info.plist */,
+				FC7C45911FCE908A00EC0210 /* FirebaseSampleVC.swift */,
 			);
 			path = "(1126)GoogleMapsSample";
 			sourceTree = "<group>";
@@ -154,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC10E0651FCC3D6D003E6F07 /* LaunchScreen.storyboard in Resources */,
+				FC7C45941FCEA51200EC0210 /* GoogleService-Info.plist in Resources */,
 				FC10E0621FCC3D6D003E6F07 /* Assets.xcassets in Resources */,
 				FC10E0601FCC3D6D003E6F07 /* Main.storyboard in Resources */,
 			);
@@ -168,9 +175,18 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-(1126)GoogleMapsSample/Pods-(1126)GoogleMapsSample-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -222,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC10E05D1FCC3D6D003E6F07 /* ViewController.swift in Sources */,
+				FC7C45921FCE908A00EC0210 /* FirebaseSampleVC.swift in Sources */,
 				FC3979F61FCD42750055AC4A /* GoogleMarker.swift in Sources */,
 				FC10E05B1FCC3D6D003E6F07 /* AppDelegate.swift in Sources */,
 			);
@@ -365,7 +382,7 @@
 				DEVELOPMENT_TEAM = G4MM77V7NH;
 				INFOPLIST_FILE = "(1126)GoogleMapsSample/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.SamuelK.-1126-GoogleMapsSample";
+				PRODUCT_BUNDLE_IDENTIFIER = com.FooPls;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -381,7 +398,7 @@
 				DEVELOPMENT_TEAM = G4MM77V7NH;
 				INFOPLIST_FILE = "(1126)GoogleMapsSample/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.SamuelK.-1126-GoogleMapsSample";
+				PRODUCT_BUNDLE_IDENTIFIER = com.FooPls;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
