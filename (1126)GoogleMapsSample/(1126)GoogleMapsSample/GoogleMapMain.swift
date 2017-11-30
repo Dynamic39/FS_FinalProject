@@ -12,7 +12,7 @@ import Firebase
 import FirebaseStorage
 import FirebaseDatabase
 
-class ViewController: UIViewController {
+class GoogleMapMain: UIViewController {
 
     
     //특정 영역에서 구글맵을 사용하기 위해선, 특정 클래스를 상속 받는 IBOutlet을 선언하여 주어야 한다.
@@ -40,12 +40,12 @@ class ViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         
-        reloadPoint()
+        //reloadPoint()
     }
     
     func reloadPoint(){
         
-        let loadPosition = PositionData.main.positionData
+        let loadPosition = PositionData.main.positionDatas
         print("엥?", loadPosition)
         
         for data in loadPosition {
@@ -55,7 +55,7 @@ class ViewController: UIViewController {
             
         }
     }
-
+    
     //구글맵을 이용한, 특정 위치를 불러오는 메서드를 구현한다.
     func showSomeWhere(lati: Double, longi:Double, placeName:String){
         
@@ -78,15 +78,12 @@ class ViewController: UIViewController {
     }
     
     @IBAction func SizeUp(_ sender: UIButton) {
-        
-        
-            zoom += 1
-            CustomMap.animate(toZoom: zoom)
+        zoom += 1
+        CustomMap.animate(toZoom: zoom)
     }
     
     
     @IBAction func SizeDown(_ sender: Any) {
-        
         zoom -= 1
         CustomMap.animate(toZoom: zoom)
     }
@@ -98,12 +95,10 @@ class ViewController: UIViewController {
         guard let latiNum = latiTF.text else { return }
         guard let longiNum = longiTF.text else { return }
         
-        
-        
         showSomeWhere(lati: Double(latiNum)!, longi: Double(longiNum)!, placeName: titleTF.text!)
         
     }
     
-
+    
 }
 
