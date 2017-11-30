@@ -35,12 +35,31 @@ class GoogleMapMainVC: UIViewController {
         showSomeWhere(lati: 37.515, longi: 127.019, placeName: "Fast Campus!")
         
         reloadPoint()
+
+        
         
     }
     
     override func viewDidAppear(_ animated: Bool) {
         
-        //reloadPoint()
+        
+        // 현재 보여지는 Area기준, 사각 끝점의 위도 경도의 데이터를 확인 하는 프로퍼티
+        let projection = CustomMap.projection.visibleRegion()
+        
+        let topLeftCorner:CLLocationCoordinate2D = projection.farLeft
+        let topRightCorner:CLLocationCoordinate2D = projection.farRight
+        let bottomLeftCorner:CLLocationCoordinate2D = projection.nearLeft
+        let bottomRightCorner:CLLocationCoordinate2D = projection.nearRight
+        
+        print("Top1 : ", topLeftCorner)
+        print("Top2 : ", topRightCorner)
+        print("Bottom1 : ", bottomLeftCorner)
+        print("Bottom2 : ", bottomRightCorner)
+        
+        
+        
+        
+        
     }
     
     func reloadPoint(){
@@ -73,6 +92,11 @@ class GoogleMapMainVC: UIViewController {
         
         CustomMap.settings.myLocationButton = true
         CustomMap.isMyLocationEnabled = true
+        
+        
+        
+        
+        
         
         
     }
