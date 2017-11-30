@@ -12,7 +12,7 @@ import Firebase
 import FirebaseStorage
 import FirebaseDatabase
 
-class GoogleMapMain: UIViewController {
+class GoogleMapMainVC: UIViewController {
 
     
     //특정 영역에서 구글맵을 사용하기 위해선, 특정 클래스를 상속 받는 IBOutlet을 선언하여 주어야 한다.
