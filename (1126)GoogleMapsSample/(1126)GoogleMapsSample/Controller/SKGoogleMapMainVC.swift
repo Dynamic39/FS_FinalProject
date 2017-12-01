@@ -12,7 +12,7 @@ import Firebase
 import FirebaseStorage
 import FirebaseDatabase
 
-class GoogleMapMainVC: UIViewController {
+class SKGoogleMapMainVC: UIViewController {
 
     
     //특정 영역에서 구글맵을 사용하기 위해선, 특정 클래스를 상속 받는 IBOutlet을 선언하여 주어야 한다.
@@ -93,14 +93,9 @@ class GoogleMapMainVC: UIViewController {
         CustomMap.settings.myLocationButton = true
         CustomMap.isMyLocationEnabled = true
         
-        
-        
-        
-        
-        
-        
     }
     
+    // 맵의 현재 Zoom상태를 조절하는 메서드 (확대 / 축소 )
     @IBAction func SizeUp(_ sender: UIButton) {
         zoom += 1
         CustomMap.animate(toZoom: zoom)
@@ -111,8 +106,6 @@ class GoogleMapMainVC: UIViewController {
         zoom -= 1
         CustomMap.animate(toZoom: zoom)
     }
-    
-    
     
     @IBAction func createNewLocation(_ sender: Any) {
         

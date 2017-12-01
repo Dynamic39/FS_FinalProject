@@ -12,7 +12,7 @@ import FirebaseStorage
 import FirebaseDatabase
 
 
-class FirebaseInputVC: UIViewController {
+class SKFirebaseInputVC: UIViewController {
     
     //위도 경도 데이터를 입력할 TF를 생성한다.
     @IBOutlet weak var lati: UITextField!

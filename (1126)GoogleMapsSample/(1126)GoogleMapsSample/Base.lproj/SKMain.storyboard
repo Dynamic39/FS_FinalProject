@@ -13,7 +13,7 @@
         <!--Google Map MainVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="GoogleMapMainVC" customModule="_1126_GoogleMapsSample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="SKGoogleMapMainVC" customModule="_1126_GoogleMapsSample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -122,7 +122,7 @@
         <!--Firebase InputVC-->
         <scene sceneID="X3d-Rf-bqE">
             <objects>
-                <viewController id="VsU-fJ-maL" customClass="FirebaseInputVC" customModule="_1126_GoogleMapsSample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="VsU-fJ-maL" customClass="SKFirebaseInputVC" customModule="_1126_GoogleMapsSample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6kq-j4-Otm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -168,7 +168,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AiA-kp-kFG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="847.20000000000005" y="118.29085457271366"/>
+            <point key="canvasLocation" x="785" y="251"/>
         </scene>
     </scenes>
 </document>

@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		75951D73E636CACA52E4461A /* Pods__1126_GoogleMapsSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AB5983A0D2D99ECE108C0A4 /* Pods__1126_GoogleMapsSample.framework */; };
-		FC0E15C71FCFD3A0003CC704 /* MapDataCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0E15C61FCFD3A0003CC704 /* MapDataCenter.swift */; };
+		FC0E15C71FCFD3A0003CC704 /* SKMapDataCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0E15C61FCFD3A0003CC704 /* SKMapDataCenter.swift */; };
 		FC10E05B1FCC3D6D003E6F07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC10E05A1FCC3D6D003E6F07 /* AppDelegate.swift */; };
-		FC10E05D1FCC3D6D003E6F07 /* GoogleMapMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC10E05C1FCC3D6D003E6F07 /* GoogleMapMainVC.swift */; };
-		FC10E0601FCC3D6D003E6F07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC10E05E1FCC3D6D003E6F07 /* Main.storyboard */; };
+		FC10E05D1FCC3D6D003E6F07 /* SKGoogleMapMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC10E05C1FCC3D6D003E6F07 /* SKGoogleMapMainVC.swift */; };
+		FC10E0601FCC3D6D003E6F07 /* SKMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC10E05E1FCC3D6D003E6F07 /* SKMain.storyboard */; };
 		FC10E0621FCC3D6D003E6F07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC10E0611FCC3D6D003E6F07 /* Assets.xcassets */; };
 		FC10E0651FCC3D6D003E6F07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC10E0631FCC3D6D003E6F07 /* LaunchScreen.storyboard */; };
-		FC7C45921FCE908A00EC0210 /* FirebaseInputVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7C45911FCE908A00EC0210 /* FirebaseInputVC.swift */; };
+		FC7C45921FCE908A00EC0210 /* SKFirebaseInputVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7C45911FCE908A00EC0210 /* SKFirebaseInputVC.swift */; };
 		FC7C45941FCEA51200EC0210 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FC7C45931FCEA51200EC0210 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -22,15 +22,15 @@
 		0273303FE6FF101377B26E09 /* Pods-(1126)GoogleMapsSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-(1126)GoogleMapsSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-(1126)GoogleMapsSample/Pods-(1126)GoogleMapsSample.release.xcconfig"; sourceTree = "<group>"; };
 		2AB5983A0D2D99ECE108C0A4 /* Pods__1126_GoogleMapsSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods__1126_GoogleMapsSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		76511B99A9DFF310C6257D6C /* Pods-(1126)GoogleMapsSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-(1126)GoogleMapsSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-(1126)GoogleMapsSample/Pods-(1126)GoogleMapsSample.debug.xcconfig"; sourceTree = "<group>"; };
-		FC0E15C61FCFD3A0003CC704 /* MapDataCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapDataCenter.swift; sourceTree = "<group>"; };
+		FC0E15C61FCFD3A0003CC704 /* SKMapDataCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKMapDataCenter.swift; sourceTree = "<group>"; };
 		FC10E0571FCC3D6D003E6F07 /* (1126)GoogleMapsSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "(1126)GoogleMapsSample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC10E05A1FCC3D6D003E6F07 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FC10E05C1FCC3D6D003E6F07 /* GoogleMapMainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMapMainVC.swift; sourceTree = "<group>"; };
-		FC10E05F1FCC3D6D003E6F07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FC10E05C1FCC3D6D003E6F07 /* SKGoogleMapMainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKGoogleMapMainVC.swift; sourceTree = "<group>"; };
+		FC10E05F1FCC3D6D003E6F07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SKMain.storyboard; sourceTree = "<group>"; };
 		FC10E0611FCC3D6D003E6F07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC10E0641FCC3D6D003E6F07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC10E0661FCC3D6D003E6F07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FC7C45911FCE908A00EC0210 /* FirebaseInputVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseInputVC.swift; sourceTree = "<group>"; };
+		FC7C45911FCE908A00EC0210 /* SKFirebaseInputVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKFirebaseInputVC.swift; sourceTree = "<group>"; };
 		FC7C45931FCEA51200EC0210 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,7 +88,7 @@
 				FCDCFB521FCFDD6C00B993C9 /* View */,
 				FCDCFB511FCFDD6B00B993C9 /* Controller */,
 				FC10E05A1FCC3D6D003E6F07 /* AppDelegate.swift */,
-				FC10E05E1FCC3D6D003E6F07 /* Main.storyboard */,
+				FC10E05E1FCC3D6D003E6F07 /* SKMain.storyboard */,
 				FC10E0611FCC3D6D003E6F07 /* Assets.xcassets */,
 				FC10E0631FCC3D6D003E6F07 /* LaunchScreen.storyboard */,
 				FC10E0661FCC3D6D003E6F07 /* Info.plist */,
@@ -100,8 +100,8 @@
 		FCDCFB511FCFDD6B00B993C9 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				FC10E05C1FCC3D6D003E6F07 /* GoogleMapMainVC.swift */,
-				FC7C45911FCE908A00EC0210 /* FirebaseInputVC.swift */,
+				FC10E05C1FCC3D6D003E6F07 /* SKGoogleMapMainVC.swift */,
+				FC7C45911FCE908A00EC0210 /* SKFirebaseInputVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -116,7 +116,7 @@
 		FCDCFB531FCFDD6D00B993C9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				FC0E15C61FCFD3A0003CC704 /* MapDataCenter.swift */,
+				FC0E15C61FCFD3A0003CC704 /* SKMapDataCenter.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -186,7 +186,7 @@
 				FC10E0651FCC3D6D003E6F07 /* LaunchScreen.storyboard in Resources */,
 				FC7C45941FCEA51200EC0210 /* GoogleService-Info.plist in Resources */,
 				FC10E0621FCC3D6D003E6F07 /* Assets.xcassets in Resources */,
-				FC10E0601FCC3D6D003E6F07 /* Main.storyboard in Resources */,
+				FC10E0601FCC3D6D003E6F07 /* SKMain.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,22 +261,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC10E05D1FCC3D6D003E6F07 /* GoogleMapMainVC.swift in Sources */,
-				FC7C45921FCE908A00EC0210 /* FirebaseInputVC.swift in Sources */,
+				FC10E05D1FCC3D6D003E6F07 /* SKGoogleMapMainVC.swift in Sources */,
+				FC7C45921FCE908A00EC0210 /* SKFirebaseInputVC.swift in Sources */,
 				FC10E05B1FCC3D6D003E6F07 /* AppDelegate.swift in Sources */,
-				FC0E15C71FCFD3A0003CC704 /* MapDataCenter.swift in Sources */,
+				FC0E15C71FCFD3A0003CC704 /* SKMapDataCenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		FC10E05E1FCC3D6D003E6F07 /* Main.storyboard */ = {
+		FC10E05E1FCC3D6D003E6F07 /* SKMain.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				FC10E05F1FCC3D6D003E6F07 /* Base */,
 			);
-			name = Main.storyboard;
+			name = SKMain.storyboard;
 			sourceTree = "<group>";
 		};
 		FC10E0631FCC3D6D003E6F07 /* LaunchScreen.storyboard */ = {
