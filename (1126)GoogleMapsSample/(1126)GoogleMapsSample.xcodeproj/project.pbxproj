@@ -84,7 +84,7 @@
 		FC10E0591FCC3D6D003E6F07 /* (1126)GoogleMapsSample */ = {
 			isa = PBXGroup;
 			children = (
-				FCDCFB531FCFDD6D00B993C9 /* Model */,
+				FCDCFB531FCFDD6D00B993C9 /* SKModel */,
 				FCDCFB521FCFDD6C00B993C9 /* View */,
 				FCDCFB511FCFDD6B00B993C9 /* Controller */,
 				FC10E05A1FCC3D6D003E6F07 /* AppDelegate.swift */,
@@ -113,12 +113,12 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		FCDCFB531FCFDD6D00B993C9 /* Model */ = {
+		FCDCFB531FCFDD6D00B993C9 /* SKModel */ = {
 			isa = PBXGroup;
 			children = (
 				FC0E15C61FCFD3A0003CC704 /* SKMapDataCenter.swift */,
 			);
-			path = Model;
+			path = SKModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
