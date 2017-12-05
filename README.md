@@ -40,3 +40,9 @@
 * Collection View Sample 코드 구현 및 기초적인 작업 진행중
 * CollectionView의 CustomCell 구현을 위한 학습 진행중
 * 금주중, Main 화면에 표시될 필수 Layout 에 대하여 구현 예정
+
+### 2017.12.05일 작성
+* CollectionView의 기본적인 구조 작성 및 샘플 코드 테스트
+* CollectionView를 선택하였을때, Navigation구조에 따라 Push되도록 설정
+* 기본적인 DataModel이 구현되면, 코드 리팩토링을 통해 개선 예정
+* CustomItem Cell을 작성하여, 원하는 Label을 DetailView에 표기
