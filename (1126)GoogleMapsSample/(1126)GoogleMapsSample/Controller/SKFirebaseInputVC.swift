@@ -42,7 +42,7 @@ class SKFirebaseInputVC: UIViewController {
         
         //현재 데이터 베이스에 오토ID를 생성하고, 각 데이터를 저장하여 준다.
         ref.child("latiAndLongi").childByAutoId().setValue(value)
-        print("에러처리 : ", ref.debugDescription)
+        //print("에러처리 : ", ref.debugDescription)
         
     }
 }
