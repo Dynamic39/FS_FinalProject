@@ -14,7 +14,7 @@ import Firebase
 import FirebaseStorage
 import FirebaseDatabase
 
-class SKGoogleMapMainVC: UIViewController, GMSPlacePickerViewControllerDelegate, UINavigationControllerDelegate {
+class SKGoogleMapMainVC: UIViewController{
 
     
     //특정 영역에서 구글맵을 사용하기 위해선, 특정 클래스를 상속 받는 IBOutlet을 선언하여 주어야 한다.
@@ -27,8 +27,12 @@ class SKGoogleMapMainVC: UIViewController, GMSPlacePickerViewControllerDelegate,
     @IBOutlet weak var CustomMap: GMSMapView!
     var zoom:Float = 15.0
     
-    var config:GMSPlacePickerConfig?
-    var placePicker:GMSPlacePickerViewController?
+    
+    var selectedTitle:String?
+    var selectedAddress:String?
+    var selectedLati:Double?
+    var selectedLongi:Double?
+    
     
     
     //var samplePosition
@@ -39,17 +43,6 @@ class SKGoogleMapMainVC: UIViewController, GMSPlacePickerViewControllerDelegate,
         showSomeWhere(lati: 37.515, longi: 127.019, placeName: "Fast Campus!")
         
         reloadPoint()
-        self.navigationController?.navigationBar.backgroundColor = .yellow
-        config = GMSPlacePickerConfig(viewport: nil)
-        placePicker = GMSPlacePickerViewController(config: config!)
-    
-        placePicker?.delegate = self
-        
-        
-        
-        
-        
-        
         
     }
     
@@ -107,34 +100,24 @@ class SKGoogleMapMainVC: UIViewController, GMSPlacePickerViewControllerDelegate,
         
     }
     
-    func placePicker(_ viewController: GMSPlacePickerViewController, didPick place: GMSPlace) {
-        
-        viewController.dismiss(animated: true, completion: nil)
-        
-        
-        
-        print("장소명 : ", place.name)
-        print("주소명 : ", place.formattedAddress)
-        print("어트리뷰션 : ", place.attributions)
-        
-    }
     
-    func placePickerDidCancel(_ viewController: GMSPlacePickerViewController) {
-        
-        viewController.dismiss(animated: true, completion: nil)
-        print("장소가 선택되지 않았습니다.")
-        
-    }
+    
+    
+    
     
     //특정 장소를 표기하고 저장하는 곳을 검색한다.
     @IBAction func pickPlaceBtn(_ sender: Any) {
         
-        present(placePicker!, animated: true, completion: nil)
+        let config:GMSPlacePickerConfig = GMSPlacePickerConfig(viewport: nil)
+        print(config.viewport)
+        let placePicker:GMSPlacePickerViewController = GMSPlacePickerViewController(config: config)
         
-        placePicker?.navigationController?.delegate = self
-        placePicker?.navigationController?.navigationBar.barTintColor = UIColor.yellow
-        placePicker?.navigationController?.navigationBar.backgroundColor = UIColor.yellow
-        
+        placePicker.delegate = self
+        present(placePicker, animated: true, completion: nil)
+
+        //Does not work.
+        placePicker.navigationController?.navigationBar.backgroundColor = UIColor.black
+        placePicker.navigationController?.navigationBar.isTranslucent = false
         
         
     }
@@ -163,3 +146,36 @@ class SKGoogleMapMainVC: UIViewController, GMSPlacePickerViewControllerDelegate,
     
 }
 
+extension SKGoogleMapMainVC: GMSPlacePickerViewControllerDelegate {
+    
+    func placePickerDidCancel(_ viewController: GMSPlacePickerViewController) {
+        
+        viewController.dismiss(animated: true, completion: nil)
+        print("장소가 선택되지 않았습니다.")
+        
+    }
+    
+    func placePicker(_ viewController: GMSPlacePickerViewController, didPick place: GMSPlace) {
+        
+        viewController.dismiss(animated: true, completion: nil)
+        
+        let storyboard = UIStoryboard(name: "SKMain", bundle: nil)
+        let detailVC = storyboard.instantiateViewController(withIdentifier: "SelectedViewController") as? SelectedViewController
+        detailVC?.placeName = place.name
+        detailVC?.addressValue = place.formattedAddress
+        
+        present(detailVC!, animated: true, completion: nil)
+        
+        selectedTitle = place.name
+        selectedAddress = place.formattedAddress
+        selectedLati = place.coordinate.latitude
+        selectedLongi = place.coordinate.longitude
+        
+        print("장소명 : ", place.name)
+        print("주소명 : ", place.formattedAddress)
+        print("어트리뷰션 : ", place.attributions)
+        print("위도 경도? : ", place.coordinate.latitude)
+        
+    }
+    
+}

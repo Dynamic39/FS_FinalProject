@@ -46,3 +46,8 @@
 * CollectionView를 선택하였을때, Navigation구조에 따라 Push되도록 설정
 * 기본적인 DataModel이 구현되면, 코드 리팩토링을 통해 개선 예정
 * CustomItem Cell을 작성하여, 원하는 Label을 DetailView에 표기
+
+### 2017.12.06일 작성
+* Firebase에 입력할 DataTree구조 작성
+* Firebase에 기본적인 자료를 입력하고, 해당 Data를 조회하는 작업을 진행 할 예정
+* Firebase에서 사진을 Storage에 저장하여 참조파일을 DataTree에 넣는 방법 학습중
