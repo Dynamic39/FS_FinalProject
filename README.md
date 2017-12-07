@@ -51,3 +51,10 @@
 * Firebase에 입력할 DataTree구조 작성
 * Firebase에 기본적인 자료를 입력하고, 해당 Data를 조회하는 작업을 진행 할 예정
 * Firebase에서 사진을 Storage에 저장하여 참조파일을 DataTree에 넣는 방법 학습중
+
+
+### 2017.12.07일 작성
+* 장소검색에 사용할, GooglePlacePicker기본 기능 구현
+* 처음 진행시 Custom UI구현에 어려움이 있었지만, GooglePlacePicker내 다른 delegate를 사용하여, 구현 함
+* 현재 프로젝트 색에 맞게, UINavigation Bar에 대한 Custom UI 구현 완료
+* Collection View에 Upload될 데이터에 대하여 Firebase에 어떻게 올릴지 학슴중

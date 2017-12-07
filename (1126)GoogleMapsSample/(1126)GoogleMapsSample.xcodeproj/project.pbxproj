@@ -17,6 +17,7 @@
 		FC34D5611FD7C6A800561433 /* SelectedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC34D5601FD7C6A800561433 /* SelectedViewController.swift */; };
 		FC7C45921FCE908A00EC0210 /* SKFirebaseInputVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7C45911FCE908A00EC0210 /* SKFirebaseInputVC.swift */; };
 		FC7C45941FCEA51200EC0210 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FC7C45931FCEA51200EC0210 /* GoogleService-Info.plist */; };
+		FCE310601FD8E0140068BC2A /* AutoSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE3105F1FD8E0140068BC2A /* AutoSearchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		FC34D5601FD7C6A800561433 /* SelectedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedViewController.swift; sourceTree = "<group>"; };
 		FC7C45911FCE908A00EC0210 /* SKFirebaseInputVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKFirebaseInputVC.swift; sourceTree = "<group>"; };
 		FC7C45931FCEA51200EC0210 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FCE3105F1FD8E0140068BC2A /* AutoSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoSearchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				FC10E05C1FCC3D6D003E6F07 /* SKGoogleMapMainVC.swift */,
 				FC7C45911FCE908A00EC0210 /* SKFirebaseInputVC.swift */,
 				FC34D5601FD7C6A800561433 /* SelectedViewController.swift */,
+				FCE3105F1FD8E0140068BC2A /* AutoSearchViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC10E05D1FCC3D6D003E6F07 /* SKGoogleMapMainVC.swift in Sources */,
+				FCE310601FD8E0140068BC2A /* AutoSearchViewController.swift in Sources */,
 				FC7C45921FCE908A00EC0210 /* SKFirebaseInputVC.swift in Sources */,
 				FC10E05B1FCC3D6D003E6F07 /* AppDelegate.swift in Sources */,
 				FC0E15C71FCFD3A0003CC704 /* SKMapDataCenter.swift in Sources */,
