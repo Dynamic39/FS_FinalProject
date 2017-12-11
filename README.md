@@ -58,3 +58,10 @@
 * 처음 진행시 Custom UI구현에 어려움이 있었지만, GooglePlacePicker내 다른 delegate를 사용하여, 구현 함
 * 현재 프로젝트 색에 맞게, UINavigation Bar에 대한 Custom UI 구현 완료
 * Collection View에 Upload될 데이터에 대하여 Firebase에 어떻게 올릴지 학슴중
+
+
+### 2017.12.11일 작성
+* GooglePlacePicker를 활용하여, 실제 검색하고자 하는 장소에 GoogleMarker표기
+* Firebase / Network에 대하여 계속해서 학습중
+* 지난주부터, 샘플 코드 및 작성 코드를 실제 PJ에 적용하여, Commit 하고 있음
+* 다른 팀원이 작성한 코드에 대한 리뷰 및 분석현황에 대하여, 해당 Repository에 정리 할 예정임
