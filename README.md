@@ -65,3 +65,7 @@
 * Firebase / Network에 대하여 계속해서 학습중
 * 지난주부터, 샘플 코드 및 작성 코드를 실제 PJ에 적용하여, Commit 하고 있음
 * 다른 팀원이 작성한 코드에 대한 리뷰 및 분석현황에 대하여, 해당 Repository에 정리 할 예정임
+
+### 2017.12.12일 작성
+* GoogleMap PlacePicker에 필요한 파일들을 병합
+* Map에 필요한 내용 추가 및 다른 ViewController에 연결 예정
